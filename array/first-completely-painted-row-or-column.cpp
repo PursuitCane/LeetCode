@@ -12,8 +12,8 @@ public:
             auto pair = mp[arr[i]];
             row[pair.first]++;
             col[pair.second]++;
-            if (row[pair.first] == mat.size()) return i;
-            if (col[pair.second] == mat[0].size()) return i;
+            if (row[pair.first] == mat[0].size()) return i;
+            if (col[pair.second] == mat.size()) return i;
         }
         return 0;
         
