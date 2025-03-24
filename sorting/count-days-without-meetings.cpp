@@ -20,7 +20,7 @@ public:
                 curr = end;
                 
             } else {
-                curr = end;
+                curr = max(curr, end);
             }
             if (curr >= days) break;
         }
