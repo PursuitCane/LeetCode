@@ -2,13 +2,7 @@ class Solution {
 public:
     
     int countDays(int days, vector<vector<int>>& meetings) {
-        auto lambda = [](vector<int> a, vector<int> b) {
-            if (a[0] == b[0]) {
-                return a[1] < b[1];
-            }
-            return a[0] < b[0];
-        };
-        sort(meetings.begin(), meetings.end(), lambda);
+        sort(meetings.begin(), meetings.end());
         
         int ans = 0;
         int curr = 0;
