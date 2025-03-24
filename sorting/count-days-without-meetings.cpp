@@ -11,7 +11,7 @@ public:
         sort(meetings.begin(), meetings.end(), lambda);
         
         int ans = 0;
-        int curr = 1;
+        int curr = 0;
         for (int i = 0; i < meetings.size(); i++) {
             int st = meetings[i][0];
             int end = meetings[i][1];
